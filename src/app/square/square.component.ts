@@ -1,20 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { __importDefault } from 'tslib';
 
 @Component({
   selector: 'app-square',
   template: `
-    <p>
-      square works!
-    </p>
+    <button>{{value}}</button>
   `,
   styles: [
   ]
 })
 export class SquareComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+@Input() value: 'X' | 'O';
 
 }
